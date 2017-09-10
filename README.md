@@ -1,17 +1,22 @@
 # MenuMeters
-my fork of MenuMeters for El Capitan
 
-# Usage:
-If you just want to use it, please go to http://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/ and download the binary there. Note: as written there, you might need to log out and log in (or maybe to reboot) once to enable the new version.
+This is a fork of [Raging Menace's MenuMeters][mm] for Sierra/High Sierra, attempting to merge fixes from active branches besides `@yujitach`'s because I rely on it daily and want to keep it alive.
 
-# Background:
+Mind you, this is **EXPERIMENTAL**. Refer to [the original repo][original] for issues and "official" fixes.
 
-It's a great utility being developed by http://www.ragingmenace.com/software/menumeters/ .
-As shown there (as of July 2015) the original version doesn't work on El Capitan Beta. 
-The basic reason is that SystemUIServer doesn't load Menu Extras not signed by Apple. 
-I'm making here a minimal modification so that it runs as a faceless app, putting NSStatusItem's instead of NSMenuExtra's.
+# Usage
 
-I contacted the author but haven't received the reply. To help people who's missing MenuMeters on El Capitan Beta, I decided to make the git repo public. 
+If you just want to use it, please get [Yuji Tachikawa's prebuilt binaries][bin] instead. Please note that you may have to logout/login (or maybe reboot) to enable the new version, which (like the previous ones) works as a Preference Pane.
 
-# To hack:
-Clone the git repo, open MenuMeters.xcodeproj, and build the target *PrefPane*. This should install the pref pane in your *~/Library/PreferencePanes/*. (You might need to remove the older version of MenuMeters by yourself.)
+# Background
+
+This fork was started by Yuji Tachikawa in July 2015 because the original version didn't work on `El Capitan`, since `SystemUIServer` stopped supporting third-party Menu Extras (i.e., anything not signed by Apple). Yuji replaced the `NSMenuExtra`s with `NSStatusItems`, and decided to [make his source available][original].
+
+
+# Hacking
+
+Clone the `git` repo, open `MenuMeters.xcodeproj`, and build the target `PrefPane`. This should install the pref pane in your `~/Library/PreferencePanes/`. (You might need to manually remove older versions).
+
+[mm]: http://www.ragingmenace.com/software/menumeters/
+[bin]: http://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/
+[original]: https://github.com/yujitach/MenuMeters

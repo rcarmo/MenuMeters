@@ -10,7 +10,7 @@ If you just want to use it, please get [Yuji Tachikawa's prebuilt binaries][bin]
 
 # Background
 
-This fork was started by Yuji Tachikawa in July 2015 because the original version didn't work on `El Capitan`, since `SystemUIServer` stopped supporting third-party Menu Extras (i.e., anything not signed by Apple). Yuji replaced the `NSMenuExtra`s with `NSStatusItems`, and decided to [make his source available][original].
+This fork was started by Yuji Tachikawa in July 2015 because the original version didn't work on `El Capitan`, since `SystemUIServer` stopped supporting third-party Menu Extras (i.e., anything not signed by Apple). Yuji replaced the `NSMenuExtras` with `NSStatusItems`, and decided to [make his source available][original].
 
 
 # Hacking
